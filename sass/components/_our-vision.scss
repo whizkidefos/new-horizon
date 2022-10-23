@@ -1,0 +1,38 @@
+.our-vision {
+    padding: 3rem 0;
+
+    img {
+        width: 100%;
+    }
+
+    article {
+        background: white;
+        padding: 30px;
+        margin-left: -3rem;
+
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 75px;
+                height: 3px;
+                background: $slateblue;
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .our-vision {
+        article {
+            margin-left: 0;
+        }
+    }
+}

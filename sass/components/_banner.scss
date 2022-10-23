@@ -1,0 +1,27 @@
+.hompage-banner {
+    padding: 7rem 0;
+
+    h1 {
+        color: $slateblue;
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: bold;
+    }
+}
+
+.banner-slide {
+    img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hompage-banner {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

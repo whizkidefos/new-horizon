@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+$slateblue: #3b559a;
+$aliceblue: #eff6fa;
+
+*,
+*::before,
+*::after {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+ul {
+    list-style: none
+}
+
+.callout-h3 {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+        content: '';
+        width: 75px;
+        height: 3px;
+        background: $slateblue;
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.uk-button-secondary {
+    background: $slateblue;
+    border-radius: 10px;
+}
+
+.uk-button-default {
+    border-color: $slateblue;
+    border-radius: 10px;
+}
+
+@import './components/_header';
+
+@import './components/_footer';
+
+@import './components/_banner';
+
+@import './components/_our-vision';
+
+@import './pages/_front-page';
