@@ -36,4 +36,6 @@
 
 <?php get_template_part('/components/our-vision'); ?>
 
+<?php get_template_part('/components/our-info'); ?>
+
 <?php get_footer(); ?>

@@ -1,5 +1,8 @@
 <?php
 
+// Title Tag
+add_theme_support( 'title-tag' );
+
 // Register Menus
 function newhorizon_menus() {
     register_nav_menus( 

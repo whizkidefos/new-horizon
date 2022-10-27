@@ -41,12 +41,30 @@
 
         a {
             color: lightslategray;
-            margin-left: 10px;
+            margin-left: 20px;
             transition: 200ms;
+            position: relative;
 
             &:hover {
                 color: $slateblue;
                 text-decoration: none;
+            }
+        }
+
+        li.current-menu-item a {
+            color: $slateblue;
+            font-weight: 600;
+
+            &::after {
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 3px;
+                background: $sunset;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, -50%);
             }
         }
     }

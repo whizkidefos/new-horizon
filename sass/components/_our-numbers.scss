@@ -1,0 +1,22 @@
+.our-numbers {
+    padding: 3rem 0;
+
+    &-container {
+        border-radius: $borderRadius;
+        box-shadow: $boxShadow;
+        padding: 35px;
+    }
+}
+
+.numbers-box {
+    h3 {
+        color: $slateblue;
+        font-size: 50px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}

@@ -2,11 +2,40 @@
 
 $slateblue: #3b559a;
 $aliceblue: #eff6fa;
+$sunset: #ffcc00;
+$boxShadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+$borderRadius: 10px;
 
 *,
 *::before,
 *::after {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+::selection {
+    background-color: $aliceblue;
+    color: black;
+}
+
+//ScrollBar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $aliceblue;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $slateblue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $slateblue;
 }
 
 a {
@@ -45,6 +74,13 @@ ul {
     border-radius: 10px;
 }
 
+.centered-divider {
+    background: $slateblue;
+    width: 75px;
+    height: 3px;
+    margin: 10px auto;
+}
+
 @import './components/_header';
 
 @import './components/_footer';
@@ -53,4 +89,14 @@ ul {
 
 @import './components/_our-vision';
 
+@import './components/_our-info';
+
+@import './components/_benefits';
+
+@import './components/_our-numbers';
+
 @import './pages/_front-page';
+
+@import './pages/_page';
+
+@import './pages/_custom-page-template';

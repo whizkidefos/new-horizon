@@ -1,0 +1,23 @@
+.our-info {
+    background: $aliceblue;
+    padding: 5rem 0;
+}
+
+.our-info-block {
+    svg {
+        color: $slateblue;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    h4 {
+        color: $slateblue;
+        font-weight: 600;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}

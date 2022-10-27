@@ -1,6 +1,4 @@
-// Staff Page
-.staff-page-header,
-.page-header {
+.custom-page-template-header {
     background: $slateblue;
     color: white;
     padding: 6rem 0;
@@ -24,31 +22,6 @@
     }
 }
 
-.staff-page-body,
-.page-body {
+.custom-page-template-body {
     padding: 3rem 0;
-}
-
-.staff-info-box {
-    border-radius: 10px;
-    box-shadow: $boxShadow;
-    margin-bottom: 2rem;
-    padding: 30px;
-
-    svg,
-    h4,
-    p {
-        margin: 0;
-    }
-
-    svg {
-        color: $slateblue;
-        font-size: 25px;
-    }
-
-    h4 {
-        color: $slateblue;
-        font-weight: 600;
-        padding: 10px 0;
-    }
 }
