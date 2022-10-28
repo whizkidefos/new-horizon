@@ -1,0 +1,77 @@
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8rem;
+}
+
+.login-form-container {
+    max-width: 50%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.new-horizon-auth-form {
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    padding: 30px 20px;
+    width: 100%;
+
+    input[type='text'],
+    input[type='password'],
+    input[type='submit'],
+    input[type='email'] {
+        border: 0;
+        background: lightcyan;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        border-right: $borderRadius;
+    }
+
+    input[type='submit'] {
+        border: 0;
+        background: $slateblue;
+        border-radius: $borderRadius;
+        color: white;
+        margin: 10px 0;
+    }
+
+    a {
+        color: $slateblue;
+    }
+}
+
+.auth-logo img {
+    width: 160px;
+}
+
+.um-49.um {
+    max-width: unset !important;
+    width: 100% !important;
+}
+
+.um-row {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .login-form-container {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form-container {
+        max-width: 100%;
+        width: 100%;
+    }
+}

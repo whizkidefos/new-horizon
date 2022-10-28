@@ -81,6 +81,14 @@ ul {
     margin: 10px auto;
 }
 
+input[type=submit].um-button {
+    background: $slateblue !important;
+}
+
+.um-account.current span .um-account-icon {
+    color: $slateblue !important;
+}
+
 @import './components/_header';
 
 @import './components/_footer';
@@ -100,3 +108,5 @@ ul {
 @import './pages/_page';
 
 @import './pages/_custom-page-template';
+
+@import './pages/_login-register';

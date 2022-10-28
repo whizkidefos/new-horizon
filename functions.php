@@ -1,7 +1,8 @@
 <?php
 
-// Title Tag
-add_theme_support( 'title-tag' );
+// Theme support
+include get_theme_file_path( '/inc/theme-support.php' );
+
 
 // Register Menus
 function newhorizon_menus() {
@@ -31,7 +32,7 @@ function newhorizon_scripts() {
     wp_enqueue_style( 'main-css', get_template_directory_uri(). '/css/newhorizon.css', array('uikit-css', 'googlefonts'), '1.0.0' );
 
     // JavaScripts
-    if ( !is_admin() ) wp_deregister_script('jquery');
+    // if ( !is_admin() ) wp_deregister_script('jquery');
 
     wp_enqueue_script( 'jquery', get_template_directory_uri(). '/js/jquery.min.js', array(), '3.6.1', 'true' );
 

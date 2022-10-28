@@ -72,6 +72,14 @@ ul {
   margin: 10px auto;
 }
 
+input[type=submit].um-button {
+  background: #3b559a !important;
+}
+
+.um-account.current span .um-account-icon {
+  color: #3b559a !important;
+}
+
 .site-header {
   background: white;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
@@ -142,7 +150,7 @@ ul {
 
 .burger {
   position: fixed;
-  top: 6rem;
+  top: 4rem;
   bottom: 50%;
   right: 20px;
   width: 35px;
@@ -480,4 +488,76 @@ footer .copyright {
 
 .custom-page-template-body {
   padding: 3rem 0;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.login-form-container {
+  max-width: 50%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.new-horizon-auth-form {
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+  padding: 30px 20px;
+  width: 100%;
+}
+.new-horizon-auth-form input[type=text],
+.new-horizon-auth-form input[type=password],
+.new-horizon-auth-form input[type=submit],
+.new-horizon-auth-form input[type=email] {
+  border: 0;
+  background: lightcyan;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border-right: 10px;
+}
+.new-horizon-auth-form input[type=submit] {
+  border: 0;
+  background: #3b559a;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 0;
+}
+.new-horizon-auth-form a {
+  color: #3b559a;
+}
+
+.auth-logo img {
+  width: 160px;
+}
+
+.um-49.um {
+  max-width: unset !important;
+  width: 100% !important;
+}
+
+.um-row {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .login-form-container {
+    max-width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .login-form-container {
+    max-width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .login-form-container {
+    max-width: 100%;
+    width: 100%;
+  }
 }
