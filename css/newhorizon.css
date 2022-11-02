@@ -80,6 +80,21 @@ input[type=submit].um-button {
   color: #3b559a !important;
 }
 
+div.wpforms-container-full .wpforms-form .wpforms-pagebreak-left .wpforms-page-button,
+.wpforms-submit-container .wpforms-submit,
+.wpforms-form button[type=submit] {
+  background: #3b559a !important;
+  border: 0;
+  border-radius: 10px;
+  color: white !important;
+  padding: 10px 30px !important;
+}
+
+div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms-save-resume-button {
+  color: #3b559a;
+  margin: 0 10px;
+}
+
 .site-header {
   background: white;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);

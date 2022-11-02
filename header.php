@@ -27,7 +27,11 @@
                 ?>
                 <div class="button-container">
                     <a href="/apply-now" class="uk-button uk-button-default nav-cta">Apply Now</a>
-                    <a href="/login" class="uk-button uk-button-secondary nav-cta">Login</a>
+                    <?php if (is_user_logged_in()): ?>
+                        <a href="/user" class="uk-button uk-button-secondary nav-cta">Profile</a>
+                    <?php else: ?>
+                        <a href="/account" class="uk-button uk-button-secondary nav-cta">Login</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div><!-- navigation bar -->
