@@ -1,0 +1,30 @@
+.reviews-section {
+    padding: 3rem 0 5rem 0;
+
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 2rem;
+        position: relative;
+    }
+}
+
+.review-slide {
+    position: relative;
+    padding-top: 35px;
+
+    small {
+        color: $slateblue;
+    }
+
+    svg {
+        color: $slateblue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        font-weight: bold;
+        z-index: 2;
+    }
+}

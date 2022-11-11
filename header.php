@@ -26,7 +26,7 @@
                     wp_nav_menu( $args );
                 ?>
                 <div class="button-container">
-                    <a href="/apply-now" class="uk-button uk-button-default nav-cta">Apply Now</a>
+                    <a href="/apply-now" class="uk-button uk-button-secondary nav-cta">Apply Now</a>
                     <?php if (is_user_logged_in()): ?>
                         <a href="/user" class="uk-button uk-button-secondary nav-cta">Profile</a>
                     <?php else: ?>

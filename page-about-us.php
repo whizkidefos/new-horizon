@@ -9,7 +9,7 @@
 </section>
 
 <section class="page-body">
-    <div class="uk-container uk-container-small">
+    <div class="uk-container uk-text-center">
         <hr class="centered-divider" />
         <article>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

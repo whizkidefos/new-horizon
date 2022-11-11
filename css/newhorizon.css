@@ -95,6 +95,11 @@ div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms
   margin: 0 10px;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
 .site-header {
   background: white;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
@@ -403,6 +408,34 @@ footer .copyright {
 }
 .numbers-box p {
   margin: 0;
+}
+
+.reviews-section {
+  padding: 3rem 0 5rem 0;
+}
+.reviews-section h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.review-slide {
+  position: relative;
+  padding-top: 35px;
+}
+.review-slide small {
+  color: #3b559a;
+}
+.review-slide svg {
+  color: #3b559a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
 }
 
 .our-staff {

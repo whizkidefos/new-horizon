@@ -17,13 +17,36 @@ burger.addEventListener("click", () => {
 
 // Banner Slide
 const banner = new Swiper('.banner', {
-    speed: 1200,
+    speed: 900,
     spaceBetween: 100,
     effect: 'fade',
     fadeEffect: {
         crossFade: true
     },
     autoplay: {
-        delay: 3000,
+        delay: 2000,
     },
+});
+
+// Reviews Slide
+const review = new Swiper('.review', {
+    speed: 3000,
+    spaceBetween: 100,
+    autoplay: {
+        delay: 6000,
+    },
+    // breakpoints: {
+    //     640: {
+    //         slidesPerView: 1,
+    //         spaceBetween: 20,
+    //     },
+    //     768: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 30,
+    //     },
+    //     1024: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 30,
+    //     },
+    // },
 });
