@@ -100,6 +100,10 @@ div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms
   height: 100%;
 }
 
+.um-50.um .um-profile-body {
+  max-width: 999px !important;
+}
+
 .site-header {
   background: white;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);

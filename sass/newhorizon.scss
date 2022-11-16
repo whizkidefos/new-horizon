@@ -109,6 +109,10 @@ div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms
     height: 100%;
 }
 
+.um-50.um .um-profile-body {
+    max-width: 999px !important;
+}
+
 @import './components/_header';
 
 @import './components/_footer';
