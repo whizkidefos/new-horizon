@@ -1,8 +1,5 @@
 <?php
 
-// Theme support
-include get_theme_file_path( '/inc/theme-support.php' );
-
 
 // Register Menus
 function newhorizon_menus() {
@@ -48,6 +45,8 @@ function newhorizon_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'newhorizon_scripts' );
 
-
+// Theme support
+include get_theme_file_path( '/inc/theme-support.php' );
+include get_theme_file_path( '/inc/dbs-class-process.php' );
 
 ?>
