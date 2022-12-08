@@ -113,6 +113,38 @@ div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms
     max-width: 999px !important;
 }
 
+//Toggle password visibility
+.wpforms-field-password,
+.wpforms-field-password .wpforms-field-row-block {
+     display: flex;
+     flex-flow: wrap;
+}
+ 
+.wpforms-field-row-block *:not(input):not(i),
+.wpforms-field-password *:not(input):not(i) {
+     flex-basis: 100% !important;
+}
+ 
+#password-toggle {
+     width: 35px !important;
+     font-family: "FontAwesome" !important;
+     text-align: center;
+     line-height: 35px !important;
+     background: #d9d9d9;
+     border-radius: 2px 0 0 2px;
+     border: 1px solid #ccc;
+     border-right: 0;
+}
+ 
+.wpforms-field-password input {
+     width: calc(100% - 50px) !important;
+     border-radius: 0 2px 2px 0 !important;
+} 
+ 
+.fa-eye-slash:before {
+    font-size: 12px;
+}
+
 @import './components/_header';
 
 @import './components/_footer';
