@@ -35,18 +35,44 @@ const review = new Swiper('.review', {
     autoplay: {
         delay: 6000,
     },
-    // breakpoints: {
-    //     640: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 20,
-    //     },
-    //     768: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 30,
-    //     },
-    //     1024: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 30,
-    //     },
-    // },
+});
+
+// Toggle Password View
+var checkBox = document.querySelector('[name="view_password[]"]');
+var passwordInput = document.querySelectorAll('input[type=password]');
+
+checkBox.addEventListener("click", function() {
+    console.log('Call togglePasswordView Function');
+    passwordInput.forEach((actualPassword) => {
+        const type = actualPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    actualPassword.setAttribute('type', type);
+    });
+});
+
+$(document).ready(function () {
+  $("#dbsCheckForm").submit(function (event) {
+    var formData = {
+      applicantForename: $("#applicantForename").val(),
+      applicantSurname: $("#applicantSurname").val(),
+      
+      applicantEmailAddress: $("#applicantEmailAddress").val(),
+
+      organisationId: $("#organisationId").val(),
+      agency: $("#agency").val(),
+      positionId: $("#positionId").val(),
+      internalReference: $("#internalReference").val(),
+    };
+
+    $.ajax({
+      type: "POST",
+      url: "https://clientapi.test.disclosureservices.com/Application/InitiateApplication",
+      data: formData,
+      dataType: "json",
+      encode: true,
+    }).done(function (data) {
+      console.log(data);
+    });
+
+    event.preventDefault();
+  });
 });

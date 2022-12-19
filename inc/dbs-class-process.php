@@ -14,7 +14,7 @@ function wpf_dev_process_complete( $fields, $entry, $form_data, $entry_id ) {
       
     // Optional, you can limit to specific forms. Below, we restrict output to
     // form #5.
-    if ( absint( $form_data[ 'id' ] ) !== 140 ) {
+    if ( absint( $form_data[ 'id' ] ) !== 435 ) {
         return;
     }
      
@@ -52,7 +52,7 @@ function wpf_dev_process_complete( $fields, $entry, $form_data, $entry_id ) {
 function disclosure_services_connector( $fields, $entry, $form_data, $entry_id ) {
 
 	// Limit to Form ID = 123
-	if( 140 != $form_data['id'] )
+	if( 435 != $form_data['id'] )
 		return;
 
 	$api_url = 'https://clientapi.test.disclosureservices.com';

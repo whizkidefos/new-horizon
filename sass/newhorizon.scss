@@ -81,12 +81,12 @@ ul {
     margin: 10px auto;
 }
 
-input[type=submit].um-button {
+.um input[type=submit].um-button, .um input[type=submit].um-button:focus, .um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active {
     background: $slateblue !important;
 }
 
-.um-account.current span .um-account-icon {
-    color: $slateblue !important;
+.um .um-field-group-head, .picker__box, .picker__nav--prev:hover, .picker__nav--next:hover, .um .um-members-pagi span.current, .um .um-members-pagi span.current:hover, .um .um-profile-nav-item.active a, .um .um-profile-nav-item.active a:hover, .upload, .um-modal-header, .um-modal-btn, .um-modal-btn.disabled, .um-modal-btn.disabled:hover, div.uimob800 .um-account-side li a.current, div.uimob800 .um-account-side li a.current:hover {
+    background: $slateblue !important;
 }
 
 div.wpforms-container-full .wpforms-form .wpforms-pagebreak-left .wpforms-page-button,
@@ -168,3 +168,5 @@ div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms
 @import './pages/_custom-page-template';
 
 @import './pages/_login-register';
+
+@import './pages/page-dbs-check';

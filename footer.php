@@ -15,7 +15,7 @@
                 <div>
                     <h3>Get in touch</h3>
                     <a href="mailto:info@newhorizonhealthcareservices.co.uk" class="footer-link">info@newhorizonhealthcareservices.co.uk</a>
-                    <a href="mailto:info@newhorizonhealthcareservices.co.uk" class="footer-link">info@newhorizonhealthcareservices.co.uk</a>
+                    <a href="mailto:compliance@newhorizonhealthcareservices.co.uk" class="footer-link">compliance@newhorizonhealthcareservices.co.uk</a>
                     <a href="tel:01978592874" class="footer-link">01978592874</a>
                 </div>
             </div>

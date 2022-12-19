@@ -48,7 +48,6 @@ add_action( 'wp_enqueue_scripts', 'newhorizon_scripts' );
 
 // Theme support
 include get_theme_file_path( '/inc/theme-support.php' );
-include get_theme_file_path( '/inc/dbs-class-process.php' );
-include get_theme_file_path( '/inc/password-visibility-switch.php' );
+include get_theme_file_path( '/inc/custom-login.php' );
 
 ?>

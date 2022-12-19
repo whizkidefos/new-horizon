@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+*, *::before, *::after {
+    color: #3b559a;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    color: #3b559a;
+}
+
+body.login div#login form#loginform p.forgetmenot {}
+
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+
+body.login div#login form#loginform input {
+    border-radius: 10px;
+    color: #3b559a;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+body.login div#login form#loginform p.submit {
+    background: #3b559a;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+    background: #3b559a;
+    border-radius: 10px;
+    color: aliceblue;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+    background: #3b559a;
+    border-radius: 10px;
+    color: aliceblue;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.login form .input, .login input[type=password], .login input[type=text] {
+    border-radius: 10px;
+}
+
+#language-switcher {
+    display: none;
+}

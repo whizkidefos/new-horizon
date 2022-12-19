@@ -1,0 +1,14 @@
+.dbs-check-container {
+    max-width: 450px;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.dbs-success-alert {
+    display: none;
+    transition: 250ms;
+}
+
+.dbs-success-alert.active {
+    display: block;
+}

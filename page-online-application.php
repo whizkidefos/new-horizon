@@ -1,4 +1,4 @@
-<?php /* Template Name: Apply Now Page Template */ ?>
+<?php /* Template Name: Default Page Template */ ?>
 
 <?php get_header(); ?>
 
@@ -9,7 +9,7 @@
 </section>
 
 <section class="page-body">
-    <div class="uk-container uk-container-small">
+    <div class="uk-container">
         <article>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -22,7 +22,5 @@
         </article>
     </div>
 </section>
-
-<?php get_template_part('/components/benefits'); ?>
 
 <?php get_footer(); ?>

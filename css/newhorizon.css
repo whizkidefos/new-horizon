@@ -78,12 +78,12 @@ ul {
   margin: 10px auto;
 }
 
-input[type=submit].um-button {
+.um input[type=submit].um-button, .um input[type=submit].um-button:focus, .um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active {
   background: #3b559a !important;
 }
 
-.um-account.current span .um-account-icon {
-  color: #3b559a !important;
+.um .um-field-group-head, .picker__box, .picker__nav--prev:hover, .picker__nav--next:hover, .um .um-members-pagi span.current, .um .um-members-pagi span.current:hover, .um .um-profile-nav-item.active a, .um .um-profile-nav-item.active a:hover, .upload, .um-modal-header, .um-modal-btn, .um-modal-btn.disabled, .um-modal-btn.disabled:hover, div.uimob800 .um-account-side li a.current, div.uimob800 .um-account-side li a.current:hover {
+  background: #3b559a !important;
 }
 
 div.wpforms-container-full .wpforms-form .wpforms-pagebreak-left .wpforms-page-button,
@@ -707,4 +707,19 @@ footer .copyright {
     max-width: 100%;
     width: 100%;
   }
+}
+.dbs-check-container {
+  max-width: 450px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.dbs-success-alert {
+  display: none;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.dbs-success-alert.active {
+  display: block;
 }
