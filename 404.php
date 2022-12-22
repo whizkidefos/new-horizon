@@ -12,9 +12,9 @@
     <div class="uk-container uk-container-small">
         <hr class="centered-divider" />
         <article>
-            <h1>404</h1>
+            <h1 class="uk-text-bold">404</h1>
             <h4>Page not found!</h4>
-            <p>You've ventured into uncharted territory. However, we've got ya. Use the navigation about to find your way around, or click <a href='/'>here</a> to return home.</p>
+            <p>You've ventured into uncharted territory. However, we've got ya. Use the navigation above to find your way around, or <a href='/'>click here</a> to return home.</p>
         </article>
     </div>
 </section>

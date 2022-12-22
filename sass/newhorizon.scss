@@ -83,10 +83,12 @@ ul {
 
 .um input[type=submit].um-button, .um input[type=submit].um-button:focus, .um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active {
     background: $slateblue !important;
+    color: whitesmoke !important;
 }
 
 .um .um-field-group-head, .picker__box, .picker__nav--prev:hover, .picker__nav--next:hover, .um .um-members-pagi span.current, .um .um-members-pagi span.current:hover, .um .um-profile-nav-item.active a, .um .um-profile-nav-item.active a:hover, .upload, .um-modal-header, .um-modal-btn, .um-modal-btn.disabled, .um-modal-btn.disabled:hover, div.uimob800 .um-account-side li a.current, div.uimob800 .um-account-side li a.current:hover {
     background: $slateblue !important;
+    color: whitesmoke !important;
 }
 
 div.wpforms-container-full .wpforms-form .wpforms-pagebreak-left .wpforms-page-button,
@@ -113,36 +115,8 @@ div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms
     max-width: 999px !important;
 }
 
-//Toggle password visibility
-.wpforms-field-password,
-.wpforms-field-password .wpforms-field-row-block {
-     display: flex;
-     flex-flow: wrap;
-}
- 
-.wpforms-field-row-block *:not(input):not(i),
-.wpforms-field-password *:not(input):not(i) {
-     flex-basis: 100% !important;
-}
- 
-#password-toggle {
-     width: 35px !important;
-     font-family: "FontAwesome" !important;
-     text-align: center;
-     line-height: 35px !important;
-     background: #d9d9d9;
-     border-radius: 2px 0 0 2px;
-     border: 1px solid #ccc;
-     border-right: 0;
-}
- 
-.wpforms-field-password input {
-     width: calc(100% - 50px) !important;
-     border-radius: 0 2px 2px 0 !important;
-} 
- 
-.fa-eye-slash:before {
-    font-size: 12px;
+.um-completeness-done {
+    background: $slateblue !important;
 }
 
 @import './components/_header';
