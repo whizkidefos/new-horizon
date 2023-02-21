@@ -37,20 +37,9 @@ const review = new Swiper('.review', {
     },
 });
 
-// Toggle Password View
-var checkBox = document.querySelector('[name="view_password[]"]');
-var passwordInput = document.querySelectorAll('input[type=password]');
-
-checkBox.addEventListener("click", function() {
-    console.log('Call togglePasswordView Function');
-    passwordInput.forEach((actualPassword) => {
-        const type = actualPassword.getAttribute('type') === 'password' ? 'text' : 'password';
-    actualPassword.setAttribute('type', type);
-    });
-});
-
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   $("#dbsCheckForm").submit(function (event) {
+    console.log('function start');
     var formData = {
       applicantForename: $("#applicantForename").val(),
       applicantSurname: $("#applicantSurname").val(),
@@ -62,6 +51,7 @@ $(document).ready(function () {
       positionId: $("#positionId").val(),
       internalReference: $("#internalReference").val(),
     };
+    console.log('After building data object');
 
     $.ajax({
       type: "POST",
@@ -71,8 +61,23 @@ $(document).ready(function () {
       encode: true,
     }).done(function (data) {
       console.log(data);
+      $(".dbs-success-alert").addClass("active");
     });
+
+    console.log('After calling API endpoint');
 
     event.preventDefault();
   });
+});
+
+// Toggle Password View
+var checkBox = document.querySelector('[name="view_password[]"]');
+var passwordInput = document.querySelectorAll('input[type=password]');
+
+checkBox.addEventListener("click", function() {
+    console.log('Call togglePasswordView Function');
+    passwordInput.forEach((actualPassword) => {
+        const type = actualPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    actualPassword.setAttribute('type', type);
+    });
 });

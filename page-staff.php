@@ -28,7 +28,7 @@
             </p>
         </article>
 
-        <article class="staff-info-box">
+        <!--<article class="staff-info-box">
             <i class="fa-solid fa-user-doctor"></i>
             <h4>Doctors</h4>
             <p>
@@ -36,7 +36,7 @@
 
             Whether your focus is extra hours or more clinical experience we will work with you to fulfill your best potential. Register with New Horizon Healthcare Services and you will be able to receive job opportunities to suit you.
             </p>
-        </article>
+        </article>-->
 
         <article class="staff-info-box">
             <i class="fa-solid fa-heart"></i>

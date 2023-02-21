@@ -1,4 +1,4 @@
-<?php /* Template Name: Default Page Template */ ?>
+<?php /* Template Name: DBS Check */ ?>
 
 <?php get_header(); ?>
 

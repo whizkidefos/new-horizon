@@ -50,4 +50,43 @@ add_action( 'wp_enqueue_scripts', 'newhorizon_scripts' );
 include get_theme_file_path( '/inc/theme-support.php' );
 include get_theme_file_path( '/inc/custom-login.php' );
 
+add_action('um_custom_field_validation_user_email_details','um_custom_validate_user_email_details', 999, 3);
+
+function um_custom_validate_user_email_details( $key, $array, $args ) {
+
+    if ( $key == 'user_email' && isset( $args['user_email'] )) {
+
+        if ( $args['user_email'] == '' ) {
+            UM()->form()->add_error( 'user_email', __( 'E-mail Address is required', 'ultimate-member' ) );
+        } elseif ( !is_email( $args['user_email'] ) ) {
+            UM()->form()->add_error( 'user_email', __( 'The email you entered is invalid', 'ultimate-member' ) );
+        } elseif ( email_exists( $args['user_email'] ) ) {
+            UM()->form()->add_error( 'user_email', __( 'The email you entered is already registered', 'ultimate-member' ) );
+        }
+    }
+}
+
+/**
+ * Restrict registration for under 18 years old.
+ *
+ * @param array $args Form Arguments.
+ */
+function um_custom_validate_birth_date( $args ) {
+	if ( ! empty( $args['birth_date'] ) ) {
+		// Birth date as a Unix timestamp.
+		$then = strtotime( $args['birth_date'] );
+
+		// A person 18'th birthday as a Unix timestamp.
+		$adulthood = strtotime( '+18 years', $then );
+
+		// Current time.
+		$now = time();
+
+		if ( $now < $adulthood ) {
+			UM()->form()->add_error( 'birth_date', __( 'You should be over 17 years old.', 'ultimate-member' ) );
+		}
+	}
+}
+add_action( 'um_submit_form_errors_hook_', 'um_custom_validate_birth_date', 30, 1 );
+
 ?>
