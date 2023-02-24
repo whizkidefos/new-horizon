@@ -49,6 +49,7 @@ add_action( 'wp_enqueue_scripts', 'newhorizon_scripts' );
 // Theme support
 include get_theme_file_path( '/inc/theme-support.php' );
 include get_theme_file_path( '/inc/custom-login.php' );
+include get_theme_file_path( '/inc/custom-date-lock.php' );
 
 add_action('um_custom_field_validation_user_email_details','um_custom_validate_user_email_details', 999, 3);
 
