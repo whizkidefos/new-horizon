@@ -3,7 +3,10 @@
         <div class="uk-child-width-expand@m uk-flex uk-flex-middle" uk-grid>
             <article>
                 <h1>New Horizon Healthcare Services</h1>
-                <p>We are an outstanding provider of Healthcare staff in the North Wales and North West England. We offer a wide range of healthcare staff to meet your staffing needs.</p>
+                <p>
+                    We are an outstanding provider of Healthcare staff in the North Wales and North West England. We offer a wide range of healthcare staff to meet your staffing needs.
+                    As a leading provider of healthcare staffing solutions, we understand the importance of having highly skilled and compassionate healthcare professionals to meet the needs of patients. Our team is dedicated to sourcing and providing top-quality healthcare staff in North Wales and North West England, including nurses, care assistants, support workers, and allied health professionals.
+                </p>
             </article>
             <figure>
                 <!-- Slider main container -->

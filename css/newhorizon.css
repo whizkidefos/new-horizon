@@ -38,6 +38,10 @@ ul {
   list-style: none;
 }
 
+.color-blue {
+  color: #3b559a !important;
+}
+
 .callout-h3 {
   font-size: 30px;
   font-weight: bold;

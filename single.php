@@ -8,8 +8,7 @@
 
 <section class="page-body">
     <div class="uk-container uk-container-small">
-        <hr class="centered-divider" />
-        <article>
+        <article class="uk-margin-auto">
 
             <?php the_content(); ?>
 
