@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Ultimate Member - Customization
- * Description: Allow everyone to upload profile and cover photos on front-end pages.
+ * Ultimate Member 2.0 - Customization
+ * Description: Allow everyone to upload profile registration pages.
  */
 add_filter("um_user_pre_updating_files_array","um_custom_user_pre_updating_files_array", 10, 1);
 function um_custom_user_pre_updating_files_array( $arr_files ){
