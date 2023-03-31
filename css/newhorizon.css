@@ -115,6 +115,12 @@ div.wpforms-container-full .wpforms-form .wpforms-pagebreak-left .wpforms-page-b
   padding: 10px 30px !important;
 }
 
+div.um.um-register {
+  background: #3b559a;
+  color: #eff6fa;
+  padding: 20px;
+}
+
 div.wpforms-container-save-resume .wpforms-form .wpforms-pagebreak-left .wpforms-save-resume-button {
   color: #3b559a;
   margin: 0 10px;
